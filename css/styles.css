@@ -133,7 +133,11 @@ header {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color: #2F303A;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px;
 
     text-align: center;
 }
@@ -231,7 +235,7 @@ h1 {
 }
 
 /* Команда */
-.team {
+.team-box {
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -263,6 +267,43 @@ h1 {
     font-weight: 500;
     font-size: 16px;
 }
+
+.member-contacts-list {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    gap: 10px;
+}
+
+.link-contact {
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+}
+
+.link-contact:hover, .link-contact:focus{
+    border-radius: 50%;
+    background-color: var(--focus-color);
+}
+.icon-contact {
+    width: 20px;
+    height: 20px;
+    object-position: 50% 50%;
+
+    fill: #AFB1B8;
+}
+
+.link-contact:hover > .icon-contact {
+    fill: #fff;
+}
+
+.link-contact:focus >.icon-contact {
+    fill: #fff;
+}
+
 
 /* Footer */
 footer {
@@ -380,16 +421,19 @@ footer .logo {
     border-bottom: 1px solid #EEEEEE;
 }
 
-.icon {
-    fill: var(--text-color);
-}
-
 .link:hover > .icon {
     fill: var(--focus-color);
 }
 
+.link:focus >.icon {
+    fill: var(--focus-color);
+}
+
+/* Иконки */
 .icon-contacts {
     margin-right: 10px;
+
+    fill: var(--text-color);
 }
 
 .icon-advances {
@@ -400,6 +444,7 @@ footer .logo {
     border-radius: 4px;
 }
 
+
 /* Клиенты */
 .clients-box {
     padding-top: 94px;
@@ -409,20 +454,33 @@ footer .logo {
 .clients{
     display: flex;
     align-items: center;
+    gap: 30px;
 }
 
-.client {
+.client-link {
+    display: block;
     padding: 16px 32px;
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
 
-.clients .item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .clients-icons{
     width: 106px;
     height: 60px;
+
+    fill: #AFB1B8;
 }
+
+.client-link:hover, .client-link:focus {
+    border-color: var(--focus-color);
+}
+
+.client-link:hover > .icon {
+    fill: var(--focus-color);
+}
+
+.client-link:focus .icon {
+    fill: var(--focus-color);
+}
+
