@@ -455,8 +455,6 @@ footer .logo {
 }
 
 .project-name {
-    padding-left: 24px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -464,13 +462,13 @@ footer .logo {
 }
 
 .project-category {
-    padding-left: 24px;
-    
     font-size: 16px;
     line-height: 1.88;
 }
 
 .project-desc {
+    padding: 20px 24px;
+
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
@@ -492,8 +490,12 @@ footer .logo {
 }
 
 .icon-advances {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
     margin-bottom: 30px;
-    padding: 25px 102px;
 
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -514,7 +516,6 @@ footer .logo {
 .client-link {
     display: block;
     width: 170px;
-    padding: 16px 32px;
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -531,7 +532,7 @@ footer .logo {
     border-color: var(--focus-color);
 }
 
-.client-link:hover > .icon {
+.client-link:hover  .icon {
     fill: var(--focus-color);
 }
 
@@ -539,3 +540,10 @@ footer .logo {
     fill: var(--focus-color);
 }
 
+.client-flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 92px;
+}
